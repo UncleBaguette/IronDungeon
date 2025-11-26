@@ -6,13 +6,29 @@
             .container-main
             {
                 background-color: black;
-                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .gui
+            {
+                background-color: black;
+                z-index:1;
+            }
+            .overlay
+            {
+                position: relative;
+                z-index: 5;
+                height: 10px;
+                width: 10px;
+                color: aliceblue;
+                border: 2px;
+                border-color: brown;
             }
         </style>
     </head>
-    <body>
-        <span class="container-main">
-        <canvas></canvas>
-        </span>
+    <body class="container-main">
+            <img class="gui" src="img/GUI4.webp">
+            <canvas class="overlay"></canvas>
     </body>
 </html>
